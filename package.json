@@ -10,7 +10,7 @@
   "dependencies": {
     "-": "0.0.1",
     "aws-sdk": "^2.553.0",
-    "serverless": "^1.73.1",
+    "serverless": "^2.0.0",
     "serverless-dotenv-plugin": "^2.4.2",
     "source-map-support": "^0.5.10",
     "uuid": "^8.2.0"
