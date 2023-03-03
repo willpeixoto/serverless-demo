@@ -5,7 +5,9 @@
   "main": "handler.js",
   "scripts": {
     "test": "jest",
-    "run:development": "serverless offline --s development"
+    "run:development": "serverless offline --s development",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "-": "0.0.1",
@@ -13,7 +15,8 @@
     "serverless": "^3.28.1",
     "serverless-dotenv-plugin": "^2.4.2",
     "source-map-support": "^0.5.10",
-    "uuid": "^8.2.0"
+    "uuid": "^8.2.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@shelf/jest-dynamodb": "^1.7.0",
@@ -35,5 +38,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
